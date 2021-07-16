@@ -7,28 +7,94 @@
     <title>Mi blog de futbol</title>
 </head>
 <body>
-    <h1>Este es mi blog de futbol</h1>
-    <h2>Bienvenido a mi blog</h2>
-    <h3>En este blog trataremos de temas relacionados con futbol nacional e internacional</h3>
-    <h4>Mi equipo favorito es: </h4>
-    <h5>Conoce más del deporte más popular del mundo</h5>
-    <h6>Ponte en contacto conmigo</h6>
-    <p>Disfruta de noticias, opiniones, comentarios, y resultados de torneos del balompié en México y el mundo</p>
-
-    <div style="background-color: cadetblue;">
-        <!-- Esta mi inserción de CSS en mi primer sitio web -->
-        <h1>Este es el encabezado de mi "DIV"</h1>
-        <p>Este es el párrafo de mi "DIV"</p>
-        <!-- Este es el grupo 2 -->
-            <div style="background-color:grey;">
-                <h2>Este es mi segundo "DIV"</h2>
-                <a href="https://google.com">Da click aquí</a>
-                <!-- Este es mi tercer DIV -->
-                <div style="background-color: hotpink;">
-                    <p>¡Aquí va un párrafo!</p>
-                    <img src="https://p2.piqsels.com/preview/57/277/114/ball-sports-ground-line-football.jpg">
-                 </div>
+    <!-- Begin: Navigation -->
+    <header>
+        <div>
+            <nav>
+                <!-- Formato de lista no ordenada -->
+                <ul>
+                    <li><a href="#acerca">Acerca del blog</a></li>
+                    <li><a href="#equipos">Equipos Favoritos</a></li>
+                    <li><a href="#resultados">Resultados</a></li>
+                    <li><a href="contacto.html">Contacto</a></li>
+                    <li><a href="https://facebook.com">Sígueme</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <!-- END: Navigation -->
+    <!-- BEGIN: MAIN -->
+    <main>
+        <section id="acerca">
+            <div>
+                <center>
+                    <h1>Bienvenido a mi blog de futbol</h1>
+                    <h3>Conoce resultados, opiniones de expertos y más.</h3>
+                </center>
             </div>
-    </div>
+        </section>
+        <section id="equipos">
+            <div>
+                <h3>Mis equipos favoritos</h3>
+                <p>Conoce mis equipos favoritos por liga</p>
+                <img src="img/home/blog-futbol.jpg" width="300" height="auto">
+                <p>Ir a los sitios de los clubes</p>
+                <button>Ver sitio</button>
+            </div>
+        </section>
+        <section id="resultados">
+            <div>
+                <h2>Los resultados de la última semana de la liga mexicana</h2>
+                <table border="2" width="700" valign="center">
+                    <thead>
+                        <!-- Begin: CABECERA TABLA -->
+                        <tr>
+                            <td><b>Equipo</b></td>
+                            <td><b>Último resultado</b></td>
+                            <td><b>Puntos Acumulados</b></td>
+                        </tr>
+                        <!-- END: CABECERA TABLA -->
+                    </thead>
+                    <tbody>
+                        <!-- BEGIN: ATLETICO SAN LUIS -->
+                        <tr>
+                           <td><img src="img/home/iconos-equipos/logo-atletico-san-luis.png" width="50" alt="Logo Atlético San Luis - Liga MX">Atlético de San Luis</td>
+                           <td>Ganó</td>
+                           <td>5</td> 
+                        </tr>
+                        <!-- END: ATLETICO SAN LUIS -->
+                        <!-- BEGIN: ATLANTE -->
+                        <tr>
+                            <td><img src="img/home/iconos-equipos/logo-atlante.png" width="50" alt="Logo Altante - Liga MX">Altante</td>
+                            <td>Empató</td>
+                            <td>3</td>
+                        </tr>
+                        <!-- END: ATLANTE -->
+                        <!-- BEGIN: JAGUARES -->
+                        <tr>
+                            <td><img src="img/home/iconos-equipos/logo-jaguares-chiapas.png" width="50" alt="Logo de Jaguares de Chiapas - liga MX">Jaguares</td>
+                            <td>Ganó</td>
+                            <td>3</td>
+                        </tr>
+                        <!-- END: Jaguares -->
+                    </tbody>
+                </table>
+            </div>
+        </section>
+
+    </main>
+    <!-- END: MAIN -->
+    <!-- BEGIN: FOOTER -->
+    <footer>
+        <div style="background-color:#BFBCBA; padding: 10px;">
+            <img src="img/home/iconos-equipos/logo-atletico-san-luis.png" width="50" alt="Logo Atlético San Luis - Liga MX">
+            <!-- Formato de lista ordenada -->
+            <ul>
+                <li><a href="contacto.html">Contacto</a></li>
+                <li><a href="https://www.facebook.com">Mi Facebook</a></li>
+            </ul>
+        </div>
+    </footer>
+    <!-- END: Footer -->
 </body>
 </html>
