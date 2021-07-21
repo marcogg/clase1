@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<!-- EL HEAD PONEMOS LOS VÍNCULOS A OTROS ARCHIVOS, TÍTULO, INFORMACIÓN ADICIONAL y META DATA -->
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacto | mi Blog de futbol</title>
+    <!-- BEGIN:STYLES -->
+        <link rel="stylesheet" href="css/estilos.css">
+    <!-- END: STYLES -->
+</head>
+<body>
+    <!-- Begin: Navigation -->
+    <!-- HEADER: ES LA CABECERA QUE VEN LOS VISITANTES DEL SITIO -->
+    <header>
+        <div>
+            <nav>
+                <!-- Formato de lista no ordenada -->
+                <ul>
+                    <li><a href="index.html#acerca">Acerca del blog</a></li>
+                    <li><a href="index.html#equipos">Equipos Favoritos</a></li>
+                    <li><a href="index.html#resultados">Resultados</a></li>
+                    <li><a href="contacto.html#formulario">Contacto</a></li>
+                    <li><a href="https://facebook.com">Sígueme</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <!-- END: Navigation -->
+    <main>
+        <!-- BEGIN: ENCABEZADO -->
+        <section id="encabezado" style="height: 600px;">
+            <div style="width: 100%;">
+                <h2>Ponte en contacto con los administradores de este blog</h2>
+                <iframe style="width:100%; height: 500px" src="https://www.youtube.com/embed/rbuYtrNUxg4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+        </section>
+        <!-- END: ENCABEZADO -->
+        <!-- BEGIN: FORMULARIO -->
+        <section id="formulario">
+            <div>
+                <h2>Déjanos tu datos</h2>
+                <p>En breve nos contactaremos contigo</p>
+                <form>
+                    <label>
+                        <p>Tu nombre</p>
+                        <input name="firstname" id="name" type="text" placeholder="Juan Pérez">
+                    </label>
+                    <label for="phone">
+                        <p>Teléfono</p>
+                        <input name="phone" id="telephone" type="tel">
+                    </label>
+                    <label for="mail">
+                        <p>Tu e-mail</p>
+                        <input name="mail" id="email" type="email" placeholder="micorreo@ejemplo.com">
+                    </label>
+                    <label for="date">
+                        <p>¿Qué día te contactamos?</p>
+                        <input name="date" id="day" type="date">
+                    </label>
+                    <label for="">
+                        <p>Dinos tu equipo favorito de futbol</p>
+                        <select name="equipo" id="seleccion">
+                            <option value="mi equipo favorito">Altético de San Luis</option>
+                            <option value="Cruz Azul">Cruz Azul</option>
+                            <option value="Xolos">Xolos de Tijuana</option>
+                            <optgroup label="Equipos del Sur de México">
+                                <option value="Cancún">Atlante</option>
+                                <option value="Chiapas">Jaguares</option>
+                            </optgroup>
+                        </select>
+                    </label>
+
+                    <input type="submit" value="Enviar información">
+            </div>
+        </section>
+        <!-- END: FORMULARIO -->
+    </main>
+    <!-- BEGIN: FOOTER -->
+    <footer>
+        <div style="background-color:#BFBCBA; padding: 10px;">
+            <img src="img/home/iconos-equipos/logo-atletico-san-luis.png" width="50" alt="Logo Atlético San Luis - Liga MX">
+            <!-- Formato de lista ordenada -->
+            <ul>
+                <li><a href="contacto.html">Contacto</a></li>
+                <li><a href="https://www.facebook.com">Mi Facebook</a></li>
+            </ul>
+        </div>
+    </footer>
+    <!-- END: Footer -->
+</body>
+</html>

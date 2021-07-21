@@ -1,0 +1,41 @@
+/* CABECERA 
+Aqui se definien los estilos de la cabecera de index.html*/
+
+
+/* ETIQUETA PARA LLAMAR A LOS ATRIUTOS DE NIVEL ID: # */
+/* RESERVARLOS MEJOR PARA NOMBRAR ELEMENTOS INTERACTIVOS CON JAVASCRIPT */
+#acerca{
+    background-color: bisque;
+}
+
+
+/* ETIQUETAS DE CLASES */
+/* VAMOS A UTILIZAR PARA DAR FORMATO CON CSS */
+/* LOS ESTILOS CON CSS SE DEFINEN PONIENDO UN . ANTES DEL NOMBRE */
+/* PADDING: ES EL MARGEN INTERIOR DEL CONTENEDOR */
+
+.bg-light{
+    background-color:rgba(218, 218, 218, .5);
+    padding: 80px;
+}
+
+.font-arial{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+
+/* SELECTORES DE ETIQUETAS HTML */
+
+h1, h2, h3, h4, h5, h6, p {
+    font-family: Arial, Helvetica, sans-serif;
+    color: #7c838a;
+}
+
+h1{
+    font-size: 55px;
+}
+
+h2{
+    font-size: 40px;
+    color: #7C838A;
+}
