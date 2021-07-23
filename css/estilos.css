@@ -1,6 +1,33 @@
 /* CABECERA 
 Aqui se definien los estilos de la cabecera de index.html*/
 
+/* LOS SELECTORES SON LOS NOMBRES QUE YO VOY DETERMINANDO Y ETIQUETAS DE HTML QUE ME AYUDAN A ESPECIFICAR DONDE LE VOY A DAR FOMRATO */
+
+/* MAPA DE ARCHIVO
+---------------------------------------------
+FONTS
+NAVIGATION
+ACERCA DE
+RESULTADOS 
+---------------------------------------------*/
+/* EL ASTERISCO ME SELECCIONA TODOS LOS ELEMENTOS DE MI PÁGINA */
+
+@font-face{
+    font-family: 'sinami';
+    src: url('../fonts/sinami/sinami.ttf');
+}
+
+*{
+    font-family: 'Oswald', sans-serif;
+}
+
+.navigation ul{
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+    color: grey;
+    font-family: Arial, Helvetica, sans-serif;
+}
 
 /* ETIQUETA PARA LLAMAR A LOS ATRIUTOS DE NIVEL ID: # */
 /* RESERVARLOS MEJOR PARA NOMBRAR ELEMENTOS INTERACTIVOS CON JAVASCRIPT */
@@ -25,9 +52,8 @@ Aqui se definien los estilos de la cabecera de index.html*/
 
 
 /* SELECTORES DE ETIQUETAS HTML */
-
 h1, h2, h3, h4, h5, h6, p {
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: 'sinami', sans-serif;
     color: #7c838a;
 }
 
@@ -39,3 +65,6 @@ h2{
     font-size: 40px;
     color: #7C838A;
 }
+
+
+
