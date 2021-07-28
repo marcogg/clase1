@@ -29,10 +29,37 @@ RESULTADOS
     font-family: Arial, Helvetica, sans-serif;
 }
 
+.link{
+    text-decoration: none;
+    color: #686868;
+    font-size: 2rem;
+}
+
+.link:hover{
+    color:rgb(185, 44, 44);
+}
+
+/* UNIDADES DENTRO DEL CSS: EM, REM, VW, VH, %, PX
+UNIDADES RELATIVAS PARA TEXTO: EM, REM
+UNIDADES RELATIVAS PARA TODO LO DEMÁS: VW, VH, %
+VW: viewport width (El ancho de la ventana en la que estoy viendo mi sitio)
+VH: viewport height (EL alto de la ventana en la que esty viendo mi sitio)
+UNIDADES ABSOLUTAS:PX, PT */
+
+
+
 /* ETIQUETA PARA LLAMAR A LOS ATRIUTOS DE NIVEL ID: # */
 /* RESERVARLOS MEJOR PARA NOMBRAR ELEMENTOS INTERACTIVOS CON JAVASCRIPT */
-#acerca{
-    background-color: bisque;
+.acerca{
+    background-color: #c9c9c9;
+    height:20vw;
+    display: block;
+    margin-bottom: 5%;
+    margin-left: -10px;
+    margin-right:-10px;
+    text-align: center;
+    padding: 5%;
+
 }
 
 
@@ -46,6 +73,56 @@ RESULTADOS
     padding: 80px;
 }
 
+.bg-image{
+    background-image: url('../images/estadio-soccer.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    padding: 3.5%;
+    margin: 0 -10px;
+    /* EL PRIMER VALOR SE REFIERE AL MARGEN A LO ALTO, EL SEGUNDO VALOR SE REFIERES A LO ANCHO */
+}
+
+.card{
+    background-color: rgba(255, 255, 255, 0.80);
+    width: 40%;
+    display: block;
+    margin: auto;
+    text-align: center;
+    border-radius: 18px;
+}
+
+.card p, .card h3{
+    color:#3b3b3b;
+    font-size: 1.5em;
+
+}
+
+.img-liga:hover{
+    cursor: pointer;
+    /* CAMBIAMOS EL CURSOR DLE MOUSE POR LA MANITA */
+    animation: rebote 0.5s ease-in-out infinite;
+
+    /* NOMBRASMOS LA ANIMACIÓN QUE QEUREMOS DESENCADENAR EN EL ESTADO :HOVER */
+    /* EL ORDEN DE LOS VALORES ES INDISTINTO
+    EL PRIMER VALOR ES EL NOMBRE DE LA ANIMACIÓN
+    "1S" ES LA DURACIÓN DE LA ANIMACIÓN
+    "EASE-IN-OUT" ES EL EFECTO QUE HACE QUE SE MÁS SUAVE LA TRANSICIÓN
+    "INFINITE" DEFINE QUE ES UNA ANIMACIÓN QUE VA A OCURRIR SIEMPRRE QUE SE CUMPLA LA CONDICIÓN HOVER */
+}
+/* ESQUEMA BÁSICO DE LA ANIMACIÓN: EL VALOR DEL QUE PARTIMOS, Y EL VALOR DE DESTINO */
+@keyframes rebote {
+    from {
+        transform: scale(1);
+    }
+  
+    to {
+        transform: scale(1.15);
+    }
+  }
+
+  
+
 .font-arial{
     font-family: Arial, Helvetica, sans-serif;
 }
@@ -53,7 +130,8 @@ RESULTADOS
 
 /* SELECTORES DE ETIQUETAS HTML */
 h1, h2, h3, h4, h5, h6, p {
-    font-family: 'sinami', sans-serif;
+    font-family: 'Oswald', sans-serif;
+    font-weight:bolder;
     color: #7c838a;
 }
 
