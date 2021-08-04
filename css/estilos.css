@@ -8,7 +8,8 @@ Aqui se definien los estilos de la cabecera de index.html*/
 FONTS
 NAVIGATION
 ACERCA DE
-RESULTADOS 
+RESULTADOS
+RESPONSIVE 
 ---------------------------------------------*/
 /* EL ASTERISCO ME SELECCIONA TODOS LOS ELEMENTOS DE MI PÁGINA */
 
@@ -144,5 +145,31 @@ h2{
     color: #7C838A;
 }
 
+
+/* --------------RESPONSIVE------------------ */
+
+/* EL MEDIA SCREEN ES UNA CONSULTA AL TAMAÑO DEL DISPOSITIVO, LO QUE ESTÁ ENTRE PARÉNTESIS ES LA REGLA QUE DEBE CUMPLIRSE PARA APLICAR LOS ESTILOS QUE CONTIENE */
+/* EN ESTE CASO ESTOY MANIPULADO LA VERSIÓN MÓVIL DE MI SITIO PORQUE  */
+/* LAS UNIDADES EN LA REGLA DEBEN SER SÍ O SÍ PIXELES (PX) */
+
+@media screen and (max-width:768px) {
+    .bg-light{
+        background-color:#7c838a;
+        padding: 20px;
+        /* para desaparecer elementos designamos la propiedad (display:none) */
+    }
+    .bg-light h2{
+        color: white;
+    }
+}
+
+/* ESTA REGLA FUNCIONA PARA ASIGNAR PROPIEDADES EN LA VERSIÓN DE ESCRITORIO DE MI SITIO */
+@media screen and (min-width:769px) {
+    table{
+        /* Estas propiedades centran los elementos */
+        display: block;
+        margin: auto;
+    }
+}
 
 
