@@ -1,175 +1,261 @@
-/* CABECERA 
+        /* CABECERA 
 Aqui se definien los estilos de la cabecera de index.html*/
-
-/* LOS SELECTORES SON LOS NOMBRES QUE YO VOY DETERMINANDO Y ETIQUETAS DE HTML QUE ME AYUDAN A ESPECIFICAR DONDE LE VOY A DAR FOMRATO */
-
-/* MAPA DE ARCHIVO
+        /* LOS SELECTORES SON LOS NOMBRES QUE YO VOY DETERMINANDO Y ETIQUETAS DE HTML QUE ME AYUDAN A ESPECIFICAR DONDE LE VOY A DAR FOMRATO */
+        /* MAPA DE ARCHIVO
 ---------------------------------------------
 FONTS
-NAVIGATION
-ACERCA DE
-RESULTADOS
-RESPONSIVE 
+-NAVIGATION
+-ACERCA DE
+-RESULTADOS
+-BOTONES
+-FOOTER
+-RESPONSIVE 
 ---------------------------------------------*/
-/* EL ASTERISCO ME SELECCIONA TODOS LOS ELEMENTOS DE MI PÁGINA */
-
-@font-face{
-    font-family: 'sinami';
-    src: url('../fonts/sinami/sinami.ttf');
-}
-
-*{
-    font-family: 'Oswald', sans-serif;
-}
-
-.navigation ul{
-    list-style: none;
-    display: flex;
-    justify-content: space-around;
-    color: grey;
-    font-family: Arial, Helvetica, sans-serif;
-}
-
-.link{
-    text-decoration: none;
-    color: #686868;
-    font-size: 2rem;
-}
-
-.link:hover{
-    color:rgb(185, 44, 44);
-}
-
-/* UNIDADES DENTRO DEL CSS: EM, REM, VW, VH, %, PX
+        /* EL ASTERISCO ME SELECCIONA TODOS LOS ELEMENTOS DE MI PÁGINA */
+        
+        @font-face {
+            font-family: 'sinami';
+            src: url('../fonts/sinami/sinami.ttf');
+        }
+        
+        * {
+            font-family: 'Oswald', sans-serif;
+        }
+        
+        .navigation ul {
+            list-style: none;
+            display: flex;
+            justify-content: space-around;
+            color: grey;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        
+        .link {
+            text-decoration: none;
+            color: #686868;
+            font-size: 1.7rem;
+        }
+        
+        .link:hover {
+            color: rgb(185, 44, 44);
+        }
+        /* UNIDADES DENTRO DEL CSS: EM, REM, VW, VH, %, PX
 UNIDADES RELATIVAS PARA TEXTO: EM, REM
 UNIDADES RELATIVAS PARA TODO LO DEMÁS: VW, VH, %
 VW: viewport width (El ancho de la ventana en la que estoy viendo mi sitio)
 VH: viewport height (EL alto de la ventana en la que esty viendo mi sitio)
 UNIDADES ABSOLUTAS:PX, PT */
-
-
-
-/* ETIQUETA PARA LLAMAR A LOS ATRIUTOS DE NIVEL ID: # */
-/* RESERVARLOS MEJOR PARA NOMBRAR ELEMENTOS INTERACTIVOS CON JAVASCRIPT */
-.acerca{
-    background-color: #c9c9c9;
-    height:20vw;
-    display: block;
-    margin-bottom: 5%;
-    margin-left: -10px;
-    margin-right:-10px;
-    text-align: center;
-    padding: 5%;
-
-}
-
-
-/* ETIQUETAS DE CLASES */
-/* VAMOS A UTILIZAR PARA DAR FORMATO CON CSS */
-/* LOS ESTILOS CON CSS SE DEFINEN PONIENDO UN . ANTES DEL NOMBRE */
-/* PADDING: ES EL MARGEN INTERIOR DEL CONTENEDOR */
-
-.bg-light{
-    background-color:rgba(218, 218, 218, .5);
-    padding: 80px;
-}
-
-.bg-image{
-    background-image: url('../images/estadio-soccer.jpg');
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
-    padding: 3.5%;
-    margin: 0 -10px;
-    /* EL PRIMER VALOR SE REFIERE AL MARGEN A LO ALTO, EL SEGUNDO VALOR SE REFIERES A LO ANCHO */
-}
-
-.card{
-    background-color: rgba(255, 255, 255, 0.80);
-    width: 40%;
-    display: block;
-    margin: auto;
-    text-align: center;
-    border-radius: 18px;
-}
-
-.card p, .card h3{
-    color:#3b3b3b;
-    font-size: 1.5em;
-
-}
-
-.img-liga:hover{
-    cursor: pointer;
-    /* CAMBIAMOS EL CURSOR DLE MOUSE POR LA MANITA */
-    animation: rebote 0.5s ease-in-out infinite;
-
-    /* NOMBRASMOS LA ANIMACIÓN QUE QEUREMOS DESENCADENAR EN EL ESTADO :HOVER */
-    /* EL ORDEN DE LOS VALORES ES INDISTINTO
+        /* ETIQUETA PARA LLAMAR A LOS ATRIUTOS DE NIVEL ID: # */
+        /* RESERVARLOS MEJOR PARA NOMBRAR ELEMENTOS INTERACTIVOS CON JAVASCRIPT */
+        
+        .acerca {
+            background-color: #c9c9c9;
+            display: block;
+            margin-bottom: 5%;
+            margin-left: -10px;
+            margin-right: -10px;
+            text-align: center;
+            padding: 5%;
+        }
+        /* ETIQUETAS DE CLASES */
+        /* VAMOS A UTILIZAR PARA DAR FORMATO CON CSS */
+        /* LOS ESTILOS CON CSS SE DEFINEN PONIENDO UN . ANTES DEL NOMBRE */
+        /* PADDING: ES EL MARGEN INTERIOR DEL CONTENEDOR */
+        
+        .bg-light {
+            background-color: rgba(218, 218, 218, .5);
+            padding: 80px;
+        }
+        
+        .bg-image {
+            background-image: url('../images/estadio-soccer.jpg');
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center;
+            padding: 3.5%;
+            /* margin: 0 -10px; */
+            /* EL PRIMER VALOR SE REFIERE AL MARGEN A LO ALTO, EL SEGUNDO VALOR SE REFIERES A LO ANCHO */
+        }
+        
+        .card {
+            background-color: rgba(255, 255, 255, 0.80);
+            width: 60%;
+            display: block;
+            margin: auto;
+            text-align: center;
+            border-radius: 18px;
+        }
+        
+        .card h3 {
+            font-size: 1.5em;
+            color: #3b3b3b;
+        }
+        
+        .card p {
+            font-size: 1.15em;
+            color: #3b3b3b;
+            font-weight: lighter;
+            padding: 0 13%;
+        }
+        
+        .table {
+            /* EL MARGIN AUTO NOS SIRVE PARA CENTRAR LOS ELEMENTOS HORIZONTALMENTE */
+            margin: auto;
+            border: 1px solid darkgrey;
+            border-radius: 15px;
+            display: table;
+            text-align: center;
+            ;
+        }
+        
+        .table td {
+            padding: 0.5%;
+            border: 1px solid darkgrey;
+            border-radius: 10px;
+        }
+        
+        .img-liga:hover {
+            cursor: pointer;
+            /* CAMBIAMOS EL CURSOR DLE MOUSE POR LA MANITA */
+            animation: rebote 0.5s ease-in-out infinite;
+            /* NOMBRASMOS LA ANIMACIÓN QUE QEUREMOS DESENCADENAR EN EL ESTADO :HOVER */
+            /* EL ORDEN DE LOS VALORES ES INDISTINTO
     EL PRIMER VALOR ES EL NOMBRE DE LA ANIMACIÓN
     "1S" ES LA DURACIÓN DE LA ANIMACIÓN
     "EASE-IN-OUT" ES EL EFECTO QUE HACE QUE SE MÁS SUAVE LA TRANSICIÓN
     "INFINITE" DEFINE QUE ES UNA ANIMACIÓN QUE VA A OCURRIR SIEMPRRE QUE SE CUMPLA LA CONDICIÓN HOVER */
-}
-/* ESQUEMA BÁSICO DE LA ANIMACIÓN: EL VALOR DEL QUE PARTIMOS, Y EL VALOR DE DESTINO */
-@keyframes rebote {
-    from {
-        transform: scale(1);
-    }
-  
-    to {
-        transform: scale(1.15);
-    }
-  }
-
-  
-
-.font-arial{
-    font-family: Arial, Helvetica, sans-serif;
-}
-
-
-/* SELECTORES DE ETIQUETAS HTML */
-h1, h2, h3, h4, h5, h6, p {
-    font-family: 'Oswald', sans-serif;
-    font-weight:bolder;
-    color: #7c838a;
-}
-
-h1{
-    font-size: 55px;
-}
-
-h2{
-    font-size: 40px;
-    color: #7C838A;
-}
-
-
-/* --------------RESPONSIVE------------------ */
-
-/* EL MEDIA SCREEN ES UNA CONSULTA AL TAMAÑO DEL DISPOSITIVO, LO QUE ESTÁ ENTRE PARÉNTESIS ES LA REGLA QUE DEBE CUMPLIRSE PARA APLICAR LOS ESTILOS QUE CONTIENE */
-/* EN ESTE CASO ESTOY MANIPULADO LA VERSIÓN MÓVIL DE MI SITIO PORQUE  */
-/* LAS UNIDADES EN LA REGLA DEBEN SER SÍ O SÍ PIXELES (PX) */
-
-@media screen and (max-width:768px) {
-    .bg-light{
-        background-color:#7c838a;
-        padding: 20px;
-        /* para desaparecer elementos designamos la propiedad (display:none) */
-    }
-    .bg-light h2{
-        color: white;
-    }
-}
-
-/* ESTA REGLA FUNCIONA PARA ASIGNAR PROPIEDADES EN LA VERSIÓN DE ESCRITORIO DE MI SITIO */
-@media screen and (min-width:769px) {
-    table{
-        /* Estas propiedades centran los elementos */
-        display: block;
-        margin: auto;
-    }
-}
-
-
+        }
+        /* ESQUEMA BÁSICO DE LA ANIMACIÓN: EL VALOR DEL QUE PARTIMOS, Y EL VALOR DE DESTINO */
+        
+        @keyframes rebote {
+            from {
+                transform: scale(1);
+            }
+            to {
+                transform: scale(1.15);
+            }
+        }
+        
+        .font-arial {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        /* SELECTORES DE ETIQUETAS HTML */
+        
+        h1,
+        h2,
+        h3,
+        h4,
+        h5,
+        h6,
+        p {
+            font-family: 'Oswald', sans-serif;
+            font-weight: bolder;
+            color: #7c838a;
+        }
+        
+        h1 {
+            font-size: 55px;
+        }
+        
+        h2 {
+            font-size: 40px;
+            color: #7C838A;
+            text-align: center;
+        }
+        /* ------------------BOTONES----------------- */
+        
+        button {
+            background-color: darkcyan;
+            color: white;
+            padding: 2% 7%;
+            display: block;
+            margin: auto;
+            width: 100%;
+            border: none;
+            border-radius: 0 0 15px 15px;
+        }
+        /* ----------------------FOOTER---------------- */
+        
+        footer div {
+            background-color: #BFBCBA;
+            padding: 10px;
+            margin: 0 -15px -15px -15px;
+        }
+        
+        footer li {
+            list-style: none;
+        }
+        
+        footer a {
+            font-size: 1.5rem;
+            color: white;
+        }
+        /* --------------RESPONSIVE------------------ */
+        /* EL MEDIA SCREEN ES UNA CONSULTA AL TAMAÑO DEL DISPOSITIVO, LO QUE ESTÁ ENTRE PARÉNTESIS ES LA REGLA QUE DEBE CUMPLIRSE PARA APLICAR LOS ESTILOS QUE CONTIENE */
+        /* EN ESTE CASO ESTOY MANIPULADO LA VERSIÓN MÓVIL DE MI SITIO PORQUE  */
+        /* LAS UNIDADES EN LA REGLA DEBEN SER SÍ O SÍ PIXELES (PX) */
+        /* ----------------------VERSION MOVIL----------------------------- */
+        
+        @media screen and (max-width:768px) {
+            .nav-desktop li {
+                display: none;
+            }
+            .nav-mobile {
+                display: flex;
+                flex-direction: column;
+            }
+            .nav-mobile .link {
+                font-size: 1.25rem;
+            }
+            h1 {
+                font-size: 2rem;
+            }
+            .card {
+                width: 80%;
+            }
+            .bg-image {
+                padding: 6%;
+            }
+            h2 {
+                font-size: 1.7rem;
+            }
+            .bg-light {
+                padding: 30px;
+            }
+            button {
+                background-color: rgb(49, 0, 139);
+                color: white;
+            }
+            .table td {
+                font-size: 1.2rem;
+                padding: 2%;
+            }
+        }
+        /* ------------------------VERSION TABLET ---------------------------*/
+        
+        @media (min-width:768px) and (orientation:landscape) {
+            .nav-desktop {
+                display: flex;
+                font-size: 1.5rem;
+            }
+            .nav-mobile li {
+                display: none;
+            }
+        }
+        /* ESTA REGLA FUNCIONA PARA ASIGNAR PROPIEDADES EN LA VERSIÓN DE ESCRITORIO DE MI SITIO */
+        /* -------------------VERSION ESCRITORIO -----------------------------*/
+        
+        @media screen and (min-width:769px) {
+            .nav-desktop {
+                display: flex;
+            }
+            .nav-mobile li {
+                display: none;
+            }
+            .card h3 {
+                font-size: 2rem;
+            }
+            .card p {
+                font-size: 1.75rem;
+            }
+        }

@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <!-- EN LA CABECERA VAMOS A PONER LOS ARCHIVOS VINCULADOS A MI PROYECTO -->
     <meta charset="UTF-8">
@@ -15,13 +16,21 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200;400;700&display=swap" rel="stylesheet">
 </head>
+
 <body>
     <!-- Begin: Navigation -->
     <header>
         <div>
             <nav class="navigation">
                 <!-- Formato de lista no ordenada -->
-                <ul>
+                <ul class="nav-desktop">
+                    <li><a class="link" href="#acerca">Acerca del blog</a></li>
+                    <li><a class="link" href="#equipos">Equipos Favoritos</a></li>
+                    <li><a class="link" href="#resultados">Resultados</a></li>
+                    <li><a class="link" href="contacto.html#formulario">Contacto</a></li>
+                    <li><a class="link" href="https://facebook.com">Sígueme</a></li>
+                </ul>
+                <ul class="nav-mobile">
                     <li><a class="link" href="#acerca">Acerca del blog</a></li>
                     <li><a class="link" href="#equipos">Equipos Favoritos</a></li>
                     <li><a class="link" href="#resultados">Resultados</a></li>
@@ -53,7 +62,7 @@
         <section id="resultados" class="bg-light font-arial">
             <div>
                 <h2>Los resultados de la última semana de la liga mexicana</h2>
-                <table border="2" valign="center">
+                <table valign="center" class="table">
                     <thead>
                         <!-- Begin: CABECERA TABLA -->
                         <tr>
@@ -66,28 +75,28 @@
                     <tbody>
                         <!-- BEGIN: ATLETICO SAN LUIS -->
                         <tr>
-                           <td><img src="img/home/iconos-equipos/logo-atletico-san-luis.png" width="50" alt="Logo Atlético San Luis - Liga MX">Atlético de San Luis</td>
-                           <td>Ganó</td>
-                           <td>5</td> 
+                            <td><img src="img/home/iconos-equipos/logo-atletico-san-luis.png" width="50" alt="Logo Atlético San Luis - Liga MX"><br>Atlético de San Luis</td>
+                            <td>Ganó</td>
+                            <td>5</td>
                         </tr>
                         <!-- END: ATLETICO SAN LUIS -->
                         <!-- BEGIN: ATLANTE -->
                         <tr>
-                            <td><img src="img/home/iconos-equipos/logo-atlante.png" width="50" alt="Logo Altante - Liga MX">Altante</td>
+                            <td><img src="img/home/iconos-equipos/logo-atlante.png" width="50" alt="Logo Altante - Liga MX"><br>Altante</td>
                             <td>Empató</td>
                             <td>3</td>
                         </tr>
                         <!-- END: ATLANTE -->
                         <!-- BEGIN: JAGUARES -->
                         <tr>
-                            <td><img src="img/home/iconos-equipos/logo-jaguares-chiapas.png" width="50" alt="Logo de Jaguares de Chiapas - liga MX">Jaguares</td>
+                            <td><img src="img/home/iconos-equipos/logo-jaguares-chiapas.png" width="50" alt="Logo de Jaguares de Chiapas - liga MX"><br>Jaguares</td>
                             <td>Ganó</td>
                             <td>3</td>
                         </tr>
                         <!-- END: Jaguares -->
                     </tbody>
                 </table>
-                
+
             </div>
         </section>
 
@@ -95,9 +104,9 @@
     <!-- END: MAIN -->
     <!-- BEGIN: FOOTER -->
     <footer>
-        <div style="background-color:#BFBCBA; padding: 10px;">
-            <h2>Texto ejemplo</h2>
-            <img src="img/home/iconos-equipos/logo-atletico-san-luis.png" width="50" alt="Logo Atlético San Luis - Liga MX">
+        <div>
+            <h2>Síguenos</h2>
+            <!-- <img src="img/home/iconos-equipos/logo-atletico-san-luis.png" width="50" alt="Logo Atlético San Luis - Liga MX"> -->
             <!-- Formato de lista ordenada -->
             <ul>
                 <li><a href="contacto.html">Contacto</a></li>
@@ -107,4 +116,5 @@
     </footer>
     <!-- END: Footer -->
 </body>
+
 </html>
