@@ -15,6 +15,10 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200;400;700&display=swap" rel="stylesheet">
+    <!-- BOOTSTRAP -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+    <!-- ANIMATE ON SCROLL -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 </head>
 
 <body>
@@ -60,8 +64,10 @@
             </div>
         </section>
         <section id="resultados" class="bg-light font-arial">
-            <div>
-                <h2>Los resultados de la última semana de la liga mexicana</h2>
+            <div data-aos="fade-up" data-aos-anchor-placement="center-bottom">
+                <div>
+                    <h2>Los resultados de la última semana de la liga mexicana</h2>
+                </div>
                 <table valign="center" class="table">
                     <thead>
                         <!-- Begin: CABECERA TABLA -->
@@ -99,6 +105,34 @@
 
             </div>
         </section>
+        <section id="carrusel">
+            <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-indicators">
+                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                </div>
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img src="images/estadio-soccer.jpg" class="d-block w-100" alt="...">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="img/home/blog-futbol.jpg" class="d-block w-100" alt="...">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="img/home/soccer.jpg" class="d-block w-100" alt="...">
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Next</span>
+                </button>
+            </div>
+        </section>
 
     </main>
     <!-- END: MAIN -->
@@ -114,7 +148,17 @@
             </ul>
         </div>
     </footer>
+    <!-- MENSAJE DE ALERTA -->
+    <div class="alerta" id="alerta">
+        <h2 class="text-center">NO PUEDES IR A MI FIESTA :(</h2>
+        <button class="btn" onclick="ocultarBu();">Buuuu :(</button>
+    </div>
+    <div class="alertaOk" id="alertaOk">
+        <h2 class="text-center">PUEDES IR A MI FIESTA :)</h2>
+        <button class="btn" onclick="ocultarOk();">¡Yei!</button>
+    </div>
     <!-- END: Footer -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script>
         // Aprendiendo Javascript: comentario de una sola linea
         /*Estoy escribiendo mis
@@ -149,11 +193,55 @@
 
         console.log(txt1 + space + txt2);
 
-        console.log(num1 + num2);
+        console.log(num1 = num2);
 
         console.log(txt1 + space + num1 + " " + txt2);
+
+        // CONDICIONAL IF
+
+        // var numero1 = 5;
+        // const numero2 = 10;
+
+        // if (numero1 != numero2) {
+        //     // AQUI SE DESENCADENA EL CODIGO SI LA SENTENCIA "IF" SE CUMPLE 
+        //     alert("URRRAA");
+        // }
+
+
+        // CONDICIONAL IF ELSE
+        var edad = 50;
+        var mayorEdad = 21;
+
+        // "IF" evalua si una condición se cumple
+        if (edad <= mayorEdad) {
+            // Esto pasa cuando la condición de arriba se cumple
+            // LOS MENSAJES ALERT NO SE PUDEN DAR ESTILOS PORQUE LOS NAVEGADORES SON LOS ENCARGADOS DE DESPLEGARLOS
+            // alert("No puedes ir a mi fiesta");
+            var getAlertBu = document.getElementById("alerta");
+            getAlertBu.style.display = "block";
+        }
+        // ELSE EJECUTA EL CÓDIGO CUANDO LA SENTENCIA "IF" NO SE CUMPLE
+        else {
+            var getAlertOk = document.getElementById("alertaOk");
+            getAlertOk.style.display = "block";
+            // alert("Pásale a mi fiesta");
+        }
+
+        function ocultarOk() {
+            getAlertOk.style.display = "none";
+        }
+
+        function ocultarBu() {
+            getAlertBu.style.display = "none";
+        }
     </script>
     <script src="js/scripts.js"></script>
+    <!-- BOOTSTRAP JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj" crossorigin="anonymous"></script>
+    <!-- INITIALIZE AOS -->
+    <script>
+        AOS.init();
+    </script>
 </body>
 
 </html>
