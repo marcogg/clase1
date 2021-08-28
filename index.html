@@ -148,15 +148,7 @@
             </ul>
         </div>
     </footer>
-    <!-- MENSAJE DE ALERTA -->
-    <div class="alerta" id="alerta">
-        <h2 class="text-center">NO PUEDES IR A MI FIESTA :(</h2>
-        <button class="btn" onclick="ocultarBu();">Buuuu :(</button>
-    </div>
-    <div class="alertaOk" id="alertaOk">
-        <h2 class="text-center">PUEDES IR A MI FIESTA :)</h2>
-        <button class="btn" onclick="ocultarOk();">¡Yei!</button>
-    </div>
+    
     <!-- END: Footer -->
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script>
@@ -234,6 +226,22 @@
         function ocultarBu() {
             getAlertBu.style.display = "none";
         }
+    </script>
+    <script>
+        // PRACTICANDO FUNCIONES
+        var nombre = "Marco";
+        var cumple = "2 de Julio de 1991";
+        var ubicacion = "CDMX";
+
+        // UNA FUNCIÓN SE LLAMA CON LA PALABRA "FUNCTION" + "EL NOMBRE QUE QUIERO QUE TENGA" + LOS PARÁMETROS QUE SON LA INFORMACIÓN QUE LE VOY A PASAR Y QUE VA A REQUERIR PARA PROCESAR EL BLOQUE DE CÓDIGO, SE ENGLOBA EL CÓDIGO A EJECUTAR ENTR LLAVES
+
+        function presentacion(nombre, cumple, ubicacion) {
+            return "Hola, soy " + nombre + " nací el " + cumple + " y vivo en " + ubicacion;
+        }
+
+        // ES IMPORTANTE ESCRIBIR EL CÓDIGO DEFINIENDO PRIMERO LOS PARÁMETROS, LA FUNCIÓN Y AL FINAL LLAMAR LA FUNCIÓN. ES EL ORDEN LÓGICO QUE DEBEMOS CONSIDERAR SABIEDNO QUE EL CÓDIGO SE EJECUTA DE ARRIBA HACIA ABAJO Y DE IZQUIERDA A DERECHA
+
+        console.log(presentacion(nombre, cumple, ubicacion));
     </script>
     <script src="js/scripts.js"></script>
     <!-- BOOTSTRAP JS -->

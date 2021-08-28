@@ -270,6 +270,7 @@ UNIDADES ABSOLUTAS:PX, PT */
             top: 0;
             padding: 5%;
             display: none;
+            z-index: 5;
         }
         
         .alertaOk {
@@ -280,6 +281,7 @@ UNIDADES ABSOLUTAS:PX, PT */
             top: 0;
             padding: 5%;
             display: none;
+            z-index: 5;
         }
         
         .alerta h2,

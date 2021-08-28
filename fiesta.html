@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Invitación a la fiesta</title>
+    <!-- Begin: styles -->
+    <link rel="stylesheet" href="css/estilos.css">
+    <!-- End: styles -->
+    <!-- FONT OSWALD GOOGLE -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200;400;700&display=swap" rel="stylesheet">
+    <!-- BOOTSTRAP -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+    <!-- ANIMATE ON SCROLL -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+</head>
+
+<body>
+    <main>
+        <div class="container">
+            <div class="row mt-5">
+                <div class="col-lg-6 col-12">
+                    <h1 class="text-center">Te invito a mi fiesta</h1>
+                </div>
+                <div class="col-lg-6 col-12">
+                    <p>Es una <b>pijamada</b> que se realizará en la dirección....<br>por lo tanto es necesario que acredites tu edad para poder asistir</p>
+                </div>
+            </div>
+            <!-- END: ROW -->
+            <div class="row mt-5">
+                <!-- BEGIN: ROW -->
+                <div class="col-lg-2"></div>
+                <div class="col-lg-8">
+                    <center>
+                        <h2 class="text-center">Regístrate a mi fiesta</h2>
+                        <form>
+                            <label>
+                                ¿Cuál es tu edad?
+                                <input type="text" id="edadUsuario">
+                                <button onclick="evaluarEdad();">Enviar</button>
+                            </label>
+                        </form>
+                    </center>
+                </div>
+                <div class="col-lg-2"></div>
+            </div>
+        </div>
+        <!-- MENSAJE DE ALERTA -->
+        <div class="alerta" id="alerta">
+            <h2 class="text-center">NO PUEDES IR A MI FIESTA :(</h2>
+            <button class="btn" onclick="ocultarBu();">Buuuu :(</button>
+        </div>
+        <div class="alertaOk" id="alertaOk">
+            <h2 class="text-center">PUEDES IR A MI FIESTA :)</h2>
+            <button class="btn" onclick="ocultarOk();">¡Yei!</button>
+        </div>
+    </main>
+    <script>
+        var getEdad = document.getElementById("edadUsuario");
+        var edadMinima = 10;
+        var edadMaxima = 15;
+        var getAlertBu = document.getElementById("alerta");
+        var getAlertOk = document.getElementById("alertaOk");
+
+        function evaluarEdad() {
+            // EN LA PRIMER CONDICIO EVALUO QUE EL USUARIO TENGA POR LO MENOS 10 AÑOS
+            // if (getEdad < edadMinima) {
+
+            //     var getAlertBu = document.getElementById("alerta");
+            //     getAlertBu.style.display = "block";
+            //     // EN LA SEGUNDA CONDICION EVALUO QUE EL USUARIO NO TENGA MÁS DE 15 AÑOS
+            // } else if (getEdad > edadMaxima) {
+            //     var getAlertBu = document.getElementById("alerta");
+            //     getAlertBu.style.display = "block";
+            //     // EL USUARIO PUEDE IR A MI FIESTA
+            // } else {
+            //     var getAlertOk = document.getElementById("alertaOk");
+            //     getAlertOk.style.display = "block";
+            // }
+            if (getEdad > edadMinima && getEdad < edadMaxima) {
+                getAlertOk.style.display = "block";
+            } else {
+                getAlertBu.style.display = "block";
+            }
+        }
+    </script>
+
+</body>
+
+</html>
